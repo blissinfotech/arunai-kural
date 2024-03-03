@@ -118,13 +118,18 @@ function template1content() {
 function template2content() {
   var date = frmid('date2');
   var datedata = frmid('inpdate2').value;
-  var content = frmid('content')
+  var content = frmid('content');
+  var indru = frmid('indru');
   var contentdata = frmid('inpcontent').value;
+  var indrudata = frmid('inpindru').value;
   var inpcontentfontsize = frmid('t-2-inpcontent-font-size').value + "px";
+  var inpindrufontsize = frmid('t-2-inpindru-font-size').value + "px";
 
   date.innerHTML = datedata.toString().split("-")[1] + "/" + datedata.split("-")[2];
   content.innerHTML = contentdata;
+  indru.innerHTML = indrudata;
   $('#content').css({ 'font-size': inpcontentfontsize });
+  $('#indru').css({ 'font-size': inpindrufontsize });
 }
 
 function template3content() {

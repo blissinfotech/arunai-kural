@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&display=swap"
       rel="stylesheet" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Noto+Sans+Tamil:wdth,wght@62.5..100,900&family=Tiro+Tamil&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body onload="page_onload()">
@@ -61,9 +64,7 @@
         <label for="place">Place : </label>
         <input type="text" name="place" id="inpplace" placeholder="Place"><input type="color" id="color_place"><br>
         <label for="headline">Headline : </label>
-        <input type="text" name="headline" id="inpheadline" placeholder="Headline"><input type="color" id="color_headline"><br>
-        <label for="headline-font-size">Headline Font Size : </label>
-        <input type="number" name="headline-font-size" id="inpheadline-font-size" placeholder="Font Size" value="50"><br>
+        <input type="text" name="headline" id="inpheadline" placeholder="Headline"><input type="color" id="color_headline"><input type="number" name="headline-font-size" id="inpheadline-font-size" placeholder="Font Size" value="50"><br>
         <label for="content">Content 1 : </label>
         <input type="text" name="content" id="inpcontent1" placeholder="Content 1"><input type="color" id="color_content1"><br>
         <label for="content">Content 2 : </label>
@@ -126,13 +127,24 @@
           id="inpmain-image"
           onchange="input_image(this,'main_image2')"
           placeholder="Upload Main Image" /><br />
+          <label for="indru">Indru :</label>
+          <input
+            type="text"
+            name="indru"
+            id="inpindru"
+            placeholder="Today" />
+          <input
+            type="number"
+            name="t-2-indru-font-size"
+            id="t-2-inpindru-font-size"
+            placeholder="Font Size"
+            value="30" /><br />
         <label for="content">Content :</label>
         <input
           type="text"
           name="content"
           id="inpcontent"
-          placeholder="Content" /><br />
-        <label for="t-2-content-font-size">Content Font Size : </label>
+          placeholder="Content" />
         <input
           type="number"
           name="t-2-content-font-size"
@@ -409,10 +421,10 @@
           type="text"
           name="t-5-headline"
           id="t-5-inpheadline"
-          placeholder="Headline" /><input
+          placeholder="Headline" />
+          <input
           type="color"
-          id="t-5-color_headline" /><br />
-        <label for="t-5-headline-font-size">Headline Font Size : </label>
+          id="t-5-color_headline" />
         <input
           type="number"
           name="t-5-headline-font-size"
@@ -530,8 +542,7 @@
           id="t-6-inpheadline"
           placeholder="Headline" value="மாநகராட்சி அதிகாரிகள் கவனத்திற்கு !"/><input
           type="color"
-          id="t-6-color_headline" /><br />
-        <label for="t-6-headline-font-size">Headline Font Size : </label>
+          id="t-6-color_headline" />
         <input
           type="number"
           name="t-6-headline-font-size"

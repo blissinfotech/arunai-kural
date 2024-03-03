@@ -93,8 +93,19 @@ body {
 
   #preview-btn {
     position: fixed;
-    right: 45%;
+    right: 35%;
+    top: 30%;
+    width: 130px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  .preview #extract-btn {
+    position: fixed;
+    right: 35%;
     top: 40%;
+    width: 130px;
     padding: 10px 20px;
     font-weight: 600;
     font-size: 20px;
@@ -108,15 +119,6 @@ body {
     margin: 0 50%;
     padding: 2%;
     text-align: center;
-  }
-  .preview #extract-btn {
-    position: fixed;
-    right: 45%;
-    top: 50%;
-    padding: 10px 20px;
-    font-weight: 600;
-    font-size: 20px;
-    border-radius: 10px;
   }
   .preview .preview-img {
     position: fixed;
@@ -330,17 +332,26 @@ body {
   width: 200px;
   margin: -80px 20px 80px 500px;
 }
+
 .template_2 #today {
   z-index: 99;
   width: 360px;
   margin: 0px 180px 0px 180px;
 }
 .template_2 #indru{
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 80px;
+  line-height: 100%;
+  margin: 10px 0 20px 0;
+  font-weight: 900;
   padding: 10px 0;
+  letter-spacing: 5px;
   color: white;
-  background-color: #ff0000;
+  font-family: "Noto Sans Tamil", sans-serif;
+  font-optical-sizing: auto;
+  text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000, 5px 5px 0 #000;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
   border-radius: 10px;
 }
 .template_2 #main {
@@ -375,11 +386,13 @@ body {
 }
 .template_2 .content #content {
   position: absolute;
+  text-align: center;
   width: 400px;
   line-height: 50px;
   border-radius: 10px;
   font-size: 25px;
   padding: 30px 50px;
+  margin: 40px 40px 0 40px;
 }
 .template_2 #social_media {
   position: absolute;
@@ -1032,4 +1045,21 @@ input:checked + .slider:before {
     top: -1000px;
     right: -1000px;
   }
+}
+
+
+input{
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 20%;
+}
+input[type="number"]{
+  width: 35px;
+}
+input[type="color"]{
+  width: 30px;
+  height: 30px;
+  padding: 0;
 }
