@@ -52,140 +52,60 @@
     <section class="template-section-1 template">
       <form>
         <h2>Content Form</h2>
-        Take Action : 
-        <label class="switch">
-          <input type="checkbox" id="-t-1" onclick="hide_ta(this.id)">
-          <span class="slider round"></span>
-        </label><br><br>
         <label for="tlbrk">Top Title : </label>
-        <input
-          type="text"
-          name="tlbrk"
-          id="inptlbrk"
-          placeholder="Breaking"
-          value="Breaking" /><input type="color" id="color_tlbrk" /><br />
+        <input type="text" name="tlbrk" id="inptlbrk" placeholder="Breaking" value="Breaking"><input type="color" id="color_tlbrk"><br>
         <label for="tlplace">Top Place : </label>
-        <input
-          type="text"
-          name="tlplace"
-          id="inptlplace"
-          placeholder="Place"
-          value="தமிழ்நாடு" /><input type="color" id="color_tlplace" /><br />
+        <input type="text" name="tlplace" id="inptlplace" placeholder="Place" value="தமிழ்நாடு"><input type="color" id="color_tlplace"><br>
         <label for="content_image">Content Image : </label>
-        <input
-          type="file"
-          name="content_image"
-          id="content_image"
-          accept="image/*"
-          onchange="input_image(this,'main_image');" /><br />
+        <input type="file" name="content_image" id="content_image" accept="image/*" onchange="input_image(this,'main_image');"><br>
         <label for="place">Place : </label>
-        <input
-          type="text"
-          name="place"
-          id="inpplace"
-          placeholder="Place" /><input type="color" id="color_place" /><br />
+        <input type="text" name="place" id="inpplace" placeholder="Place"><input type="color" id="color_place"><br>
         <label for="headline">Headline : </label>
-        <input
-          type="text"
-          name="headline"
-          id="inpheadline"
-          placeholder="Headline" /><input
-          type="color"
-          id="color_headline" /><br />
+        <input type="text" name="headline" id="inpheadline" placeholder="Headline"><input type="color" id="color_headline"><br>
         <label for="headline-font-size">Headline Font Size : </label>
-        <input
-          type="number"
-          name="headline-font-size"
-          id="inpheadline-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
+        <input type="number" name="headline-font-size" id="inpheadline-font-size" placeholder="Font Size" value="50"><br>
         <label for="content">Content 1 : </label>
-        <input
-          type="text"
-          name="content"
-          id="inpcontent1"
-          placeholder="Content 1" /><input
-          type="color"
-          id="color_content1" /><br />
+        <input type="text" name="content" id="inpcontent1" placeholder="Content 1"><input type="color" id="color_content1"><br>
         <label for="content">Content 2 : </label>
-        <input
-          type="text"
-          name="content"
-          id="inpcontent2"
-          placeholder="Content 2" /><input
-          type="color"
-          id="color_content2" /><br />
+        <input type="text" name="content" id="inpcontent2" placeholder="Content 2"><input type="color" id="color_content2"><br>
         <label for="content">Content 3 : </label>
-        <input
-          type="text"
-          name="content"
-          id="inpcontent3"
-          placeholder="Content 3" /><input
-          type="color"
-          id="color_content3" /><br />
+        <input type="text" name="content" id="inpcontent3" placeholder="Content 3"><input type="color" id="color_content3"><br>
         <label for="content">Content 4 : </label>
-        <input
-          type="text"
-          name="content"
-          id="inpcontent4"
-          placeholder="Content 4" /><input
-          type="color"
-          id="color_content4" /><br />
+        <input type="text" name="content" id="inpcontent4" placeholder="Content 4"><input type="color" id="color_content4"><br>
         <label for="content-font-size">Content Font Size : </label>
-        <input
-          type="number"
-          name="content-font-size"
-          id="inpcontent-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
+        <input type="number" name="content-font-size" id="inpcontent-font-size" placeholder="Font Size" value="50"><br>
         <label for="credit_image">Credit Image : </label>
-        <input
-          type="file"
-          name="credit_image"
-          accept="image/*"
-          onchange="input_image(this,'credit_image');" /><br />
+        <input type="file" name="credit_image" accept="image/*" onchange="input_image(this,'credit_image');"><br>
         <label for="date">Date :</label>
-        <input type="date" name="date" id="inpdate" placeholder="date" /><input
-          type="color"
-          id="color_date"/><br />
+        <input type="date" name="date" id="inpdate" placeholder="date"><input type="color" id="color_date"><br> 
       </form>
       <div class="template_1 template-image" id="template1">
-        <div class="take-action" id="take_action-t-1"><img src="./img/take-action.png" style="margin-top: 150px;" alt=""></div>
-        <div class="top-logo">
-          <span id="breaking-tn">
-            <p class="eng-font" id="tn-1"><strong>BREAKING</strong></p>
-            <p id="tn-2">தமிழ்நாடு</p>
-          </span>
-          <img id="main_logo" src="./img/Arunai Logo TOP.png" alt="" />
-        </div>
-        <div class="main_image main_image">
-          <div class="blur"></div>
-          <p id="water-mark">Arunai Kural</p>
-          <img
-            id="main_image"
-            class="main-image"
-            src="./img/Image.jpg"
-            alt="" />
-        </div>
-        <div fonclass="head apply-font">
-          <img src="./img/Arunai Logo.png" alt="" class="head_logo logo" />
-          <p>
-            <span class="place" id="place">திருவண்ணாமலை</span>
-            <br/><br/>
-            <span id="headline">வருமான வரித்துறை நோட்டீஸ் அனுப்பக்கூடும்</span>
-          </p>
-        </div>
-        <div class="content apply-font">
-          <span id="content1" class="apply-font">வருமான</span>
-          <span id="content2">வரித்துறையிடம் முதலீட்டுச் சான்று அளிக்கும் போதே சிலர்</span>
-          <span id="content3">போலியான வாடகை ஒப்பந்தம்</span>
-          <span id="content4">மற்றும் வாடகை ரசீதுகளை சமர்ப்பித்து அதிக வரியைச் சேமிக்கின்றனர்</span>
-        </div>
-        <div class="credit">
-          <img id="credit_image" src="./img/credit-temp.svg" alt="" />
-        </div>
-        <img id="credit-sm" src="./img/credit-1.svg" alt="" />
-        <span id="date">31/12/2024</span>
+          <div class="top-logo">
+              <span id="breaking-tn">
+                <p id="tn-1">BREAKING</p>
+                <p id="tn-2">தமிழ்நாடு</p>
+              </span>
+              <img id="main_logo" src="./img/logo.png" alt="">
+          </div>
+          <div class="main_image main_image">
+            <P id="water-mark">Arunai Kural</P>
+            <img id="main_image" class="main-image" src="./img/Image.jpg" alt="">
+          </div>
+          <div class="head">
+              <img src="./img/logo.svg" alt="" class="head_logo logo">
+              <p><span class="place apply-font" id="place">திருவண்ணாமலை</span><br><br><span class="apply-font" id="headline">வருமான வரித்துறை நோட்டீஸ் அனுப்பக்கூடும்</span></p>
+          </div>
+          <div class="content apply-font"> 
+              <span id="content1" class=".font-arugam" style="color: red;">வருமான</span>
+              <span id="content2">வரித்துறையிடம் முதலீட்டுச் சான்று அளிக்கும் போதே சிலர்</span>
+              <span id="content3" style="color: red;">போலியான வாடகை ஒப்பந்தம்</span>
+              <span id="content4">மற்றும் வாடகை ரசீதுகளை சமர்ப்பித்து அதிக வரியைச் சேமிக்கின்றனர்</span>
+          </div>
+          <div class="credit">
+            <img id="credit_image" src="./img/credit-temp.svg" alt="">
+          </div>
+          <img id="credit-sm" src="./img/credit-1.svg" alt="">
+          <span id="date">31/12/2024</span>
       </div>
     </section>
 
@@ -220,7 +140,6 @@
           placeholder="Font Size"
           value="30" /><br />
       </form>
-
       <div class="template_2 template-image" id="template2">
         <div class="take-action" id="take_action-t-2"><img src="./img/take-action.png" style="margin-top: 300px;" alt=""></div>
         <div id="calender">
@@ -228,7 +147,8 @@
           <span id="date2">31/12</span>
         </div>
         <img id="logo" src="./img/Arunai_white.png" alt="" />
-        <img id="today" src="./img/today.png" alt="" />
+        <!-- <img id="today" src="./img/today.png" alt="" /> -->
+        <h1 id="indru">இன்று</h1>
         <div id="main">
           <div id="main_img">
             <p id="water-mark" style="top: -20px">Arunai Kural</p>
@@ -574,15 +494,10 @@
         </div>
         <div class="t-5-content apply-font">
           <p>
-            <span id="t-5-content1"
-              >This is default t-5-content This is default t-5-content This is
-              default t-5-content This is default t-5-content This is default
-              t-5-content This is default t-5-content This is default
-              t-5-content This is default t-5-content This is default
-              t-5-content This is default t-5-content</span
-            ><span id="t-5-content2">bla blacksheep repeat again</span
-            ><span id="t-5-content3">and again and again untill die</span
-            ><span id="t-5-content4">and again and again</span>
+            <span id="t-5-content1">எல்லையில் நுழைந்த மியான்மர் ராணுவம்...</span>
+            <span id="t-5-content2"> இந்திய இராணுவம்</span>
+            <span id="t-5-content3"> எடுத்த அதிரடி</span>
+            <span id="t-5-content4"> முடிவு...</span>
           </p>
         </div>
         <div class="t-5-social-media">
@@ -688,18 +603,20 @@
           </span>
           <p id="t-6-heading" class="apply-font">மாநகராட்சி அதிகாரிகள் கவனத்திற்கு !</p>
           <p class="t6-content apply-font">
-            <span id="t-6-content1">This is default t-6-content This is default t-6-content</span>
-            <span id="t-6-content2">bla blacksheep repeat again</span>
-            <span id="t-6-content3">and again and again untill die</span>
-            <span id="t-6-content4">and again and again</span>
+            <span id="t-6-content1">எல்லையில் நுழைந்த மியான்மர் ராணுவம்...</span>
+            <span id="t-6-content2"> இந்திய இராணுவம்</span>
+            <span id="t-6-content3"> எடுத்த அதிரடி</span>
+            <span id="t-6-content4"> முடிவு...</span>
           </p>
         </div>
         <img id="bg_image" src="./img/bg_image.png" alt="Template 6">
-        <img id="t-6-main_image" class="main-image" src="./img/arunai-kural.png" alt="" />
+        <div class="t-6-main_image">
+          <img id="t-6-main_image" class="main-image" src="./img/arunai-kural.png" alt="" />
+        </div>
         <div class="t-6-credit">
           <img id="t-6-credit_image" src="./img/credit-temp.svg" alt="" />
         </div>
-        <h1 id="t-6-just-now">JUST NOW</h1>
+        <h1 id="t-6-just-now" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">JUST NOW</h1>
       </div>
     </section>
 

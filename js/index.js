@@ -312,7 +312,7 @@ function input_image(input, id) {
     var reader = new FileReader();
     reader.onload = function (e) {
       $('#' + id).attr('src', e.target.result);
-      $('.' + id).css('background-image', "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(" + e.target.result + ")");
+      $('.' + id).css('background-image', "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(" + e.target.result + ")");
     };
     reader.readAsDataURL(input.files[0]);
   }
@@ -323,6 +323,16 @@ function t_4_main_image(input) {
     var reader = new FileReader();
     reader.onload = function (e) {
       $('.t-4-main_img').css('background-image', "url(" + e.target.result + ")");
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+function t_6_main_image(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      $('.main-image-t-6').css('background-image', "url(" + e.target.result + ")");
     };
     reader.readAsDataURL(input.files[0]);
   }

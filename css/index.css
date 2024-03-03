@@ -154,15 +154,13 @@ body {
 }
 
 /* template 1 */
-
-.template_1 {
+.template_1{
   width: 720px;
   height: 720px;
-  background-color: #ffffb9;
+  background-color: #FFFFB9;
   color: #2d2d2d;
-  line-height: 200%;
 }
-.template_1 .top-logo {
+.template_1 .top-logo{
   position: relative;
   display: flex;
   z-index: 9;
@@ -170,120 +168,101 @@ body {
   justify-content: space-between;
   padding: 30px 20px 0 20px;
 }
-.template_1 .top-logo #breaking-tn {
+.template_1 .top-logo #breaking-tn{
   display: flex;
   position: absolute;
   width: fit-content;
   margin-top: -30px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 23px;
   font-weight: 600;
 }
-.template_1 .top-logo #breaking-tn #tn-1 {
+.template_1 .top-logo #breaking-tn #tn-1{
   color: white;
-  /* letter-spacing: 4px;
-  font-weight: bolder; */
-  background-color: #0964bd;
+  background-color: #0964BD;
   padding: 8px 100px 10px 10px;
   border-radius: 5px 20px 5px 5px;
 }
-.template_1 .top-logo #breaking-tn #tn-2 {
-  background-color: #de0202;
+.template_1 .top-logo #breaking-tn #tn-2{
+  background-color: #DE0202;
   color: white;
   padding: 6px 10px 5px 30px;
   margin: 30px 10px 15px -100px;
   border-radius: 50px 5px 5px 0px;
 }
-.template_1 .top-logo #main_logo {
+.template_1 .top-logo #main_logo{
   position: absolute;
-  width: 220px;
-  height: 75px !important;
+  width: 170px;
+  height: fit-content;
+  background-color: white;
   padding: 5px 10px;
-  margin: -25px 0 0 460px;
+  margin: -5px 0 0 490px;
   border-radius: 5px;
 }
-.template_1 .main_image {
+.template_1 .main_image{
   position: relative;
   z-index: 0;
   width: 650px;
   height: 300px;
   margin: 10px 35px 0 35px;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("../img/arunai-kural.png");
+  background-image: url('../img/arunai-kural.png');
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
   border-radius: 10px 10px 0 0;
 }
-
-.template_1 .main_image img {
+.template_1 .main_image img{
   position: absolute;
   max-width: 100%;
   max-height: 100%;
-  opacity: 1;
 }
-.head {
+.head{
   position: relative;
   z-index: 9;
   width: 720px;
-  max-height: min-content;
-  text-align: center;
+  max-height:min-content;
   margin: -4px 0 0 0;
   padding-bottom: 10px;
-  background: linear-gradient(90deg, #9f0316, #e70d84, #9f0316);
+  background:  linear-gradient(90deg, #9F0316,#E70D84,#9F0316);
   display: flex;
 }
-.head_logo {
+.head_logo{
   z-index: 99;
   position: absolute;
   width: 90px;
   height: 90px;
   margin: -20px 20px 0 30px;
 }
-.head p {
+.head p{
   color: snow;
   margin: -20px 0 0 0;
-  padding: 0 0 0 70px;
-  width: 100%;
+  padding: 0 0 0 130px;
+  width: 560px;
   line-height: 20px;
   font-size: 20px;
 }
-
-.eng-font {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.head p .place {
-  position: absolute;
-  background-color: #fff200;
+.place{
+  background-color: #FFF200;
   border-radius: 50px;
   padding: 5px 20px 7px 20px;
-  left: 130px;
-  top: -25px;
-  color: #2610ad;
+  color: #2610AD;
   line-height: 30px;
   font-size: 35px;
 }
-
-.head p #headline {
-  width: 560px !important;
-  text-align: center;
+.head p #headline{
+  padding-top: 20px;
 }
-.template_1 .content {
+.template_1 .content{
   z-index: 0;
   position: relative;
   text-align: center;
-  margin-top: 20px;
   font-size: 24px;
   padding: 20px 20px 10px 20px;
   height: 200px;
 }
-.template_1 .credit {
+.template_1 .credit{
   position: absolute;
   width: 720px;
   height: 96px;
@@ -291,25 +270,25 @@ body {
   text-align: center;
   bottom: 25px;
 }
-.template_1 .credit img {
+.template_1 .credit img{
   height: 96px;
-  width: 720px;
-  object-fit: fill;
+  width: fit-content;
 }
-.template_1 #credit-sm {
+.template_1 #credit-sm{
   position: absolute;
   z-index: 99;
   bottom: 0;
   right: 0;
 }
-.template_1 #date {
+.template_1 #date{
   z-index: 99;
   position: absolute;
   font-size: 25px;
   right: 10px;
-  bottom: -5px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  bottom: 2px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 /* template 2 */
 
@@ -355,6 +334,14 @@ body {
   z-index: 99;
   width: 360px;
   margin: 0px 180px 0px 180px;
+}
+.template_2 #indru{
+  font-size: 40px;
+  font-weight: 800;
+  padding: 10px 0;
+  color: white;
+  background-color: #ff0000;
+  border-radius: 10px;
 }
 .template_2 #main {
   height: 400px;
@@ -735,19 +722,36 @@ body {
 }
 
 
-
+/* template 6 */
 .template_6{
   position: fixed;
   height: 720px;
   width: 510px;
   margin: 0 6%;
 }
-.template_6 #t-6-main_image{
+.template_6 .t-6-main_image{
   position: absolute;
   z-index: 0;
-  width: 100%;
+  width: 510px;
+  height: 320px;
   top: 0;
+  right: 0;
   left: 0;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  background-size: cover;
+}
+.template_6 #t-6-main_image{
+  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: 0;
+  width: auto;
+  height: 100%;
+  margin: auto;
+  top: 0;
 }
 .template_6 #bg_image{
   position: absolute;
@@ -772,9 +776,10 @@ body {
 .template_6 .date-design{
   display: flex;
   position: absolute;
+  color: white;
   font-size: 20px;
   font-weight: 800;
-  margin: -70px 0px 10px 10px;
+  margin: -100px 0px 10px 10px;
 }
 .template_6 #t-6-date{
   font-size: 35px;
@@ -806,10 +811,11 @@ body {
   text-align: center;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-  margin: 0 -3px;
+  margin: -30px -3px;
 }
 .template_6 .t6-content{
-  padding-top: 20px;
+  padding-top: 30px;
+  text-align: center;
   color: white;
   width: 400px;
   margin: auto;
@@ -820,19 +826,19 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 185px 0 0 26px;
-  height:60px;
-  width: 459px;
+  margin: 185px 0 0 27px;
+  height: 60px;
+  width: 457px;
   text-align: center;
-  background-color: white;
 }
 .template_6 .t-6-credit img{
   max-height: 100%;
-  max-width: 100%;
+  width: 100%;
   top: 0;
   object-fit: fill;
 }
 #t-6-just-now{
+  display: none;
   position: absolute;
   z-index: 9;
   bottom: 0;
@@ -842,6 +848,7 @@ body {
   text-align: center;
   font-weight: 800;
   width: 459px;
+  padding-top: -50px;
   margin-left: 26px;
   line-height: 90%;
   font-size: 40px;
