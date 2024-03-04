@@ -869,7 +869,10 @@ body {
 
 @media only screen and (max-width: 1280px) {
   body {
-    overflow: hidden;
+    overflow-y: scroll;
+  }
+  input[type="text"]{
+    width: 180px;
   }
   .main-dashboard {
     width: 100%;

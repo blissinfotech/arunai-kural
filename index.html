@@ -61,18 +61,39 @@
         <input type="text" name="tlplace" id="inptlplace" placeholder="Place" value="தமிழ்நாடு"><input type="color" id="color_tlplace"><br>
         <label for="content_image">Content Image : </label>
         <input type="file" name="content_image" id="content_image" accept="image/*" onchange="input_image(this,'main_image');"><br>
-        <label for="place">Place : </label>
+        <!-- <label for="place">Place : </label> -->
         <input type="text" name="place" id="inpplace" placeholder="Place"><input type="color" id="color_place"><br>
-        <label for="headline">Headline : </label>
-        <input type="text" name="headline" id="inpheadline" placeholder="Headline"><input type="color" id="color_headline"><input type="number" name="headline-font-size" id="inpheadline-font-size" placeholder="Font Size" value="50"><br>
-        <label for="content">Content 1 : </label>
-        <input type="text" name="content" id="inpcontent1" placeholder="Content 1"><input type="color" id="color_content1"><br>
-        <label for="content">Content 2 : </label>
-        <input type="text" name="content" id="inpcontent2" placeholder="Content 2"><input type="color" id="color_content2"><br>
-        <label for="content">Content 3 : </label>
-        <input type="text" name="content" id="inpcontent3" placeholder="Content 3"><input type="color" id="color_content3"><br>
-        <label for="content">Content 4 : </label>
-        <input type="text" name="content" id="inpcontent4" placeholder="Content 4"><input type="color" id="color_content4"><br>
+        <!-- <label for="headline">Headline : </label> -->
+        <br>
+        <span style="display: flex;">
+          <textarea cols="40" rows="4" type="text" name="headline" id="inpheadline" placeholder="Headline"></textarea>
+          <span style="display: grid;">
+            <input type="color" id="color_headline">
+            <input type="number" name="headline-font-size" id="inpheadline-font-size" placeholder="Font Size" value="50">
+          </span>
+        </span><br>
+        <!-- <label for="content">Content 1 : </label> -->
+        <span style="display: flex;">
+          <textarea cols="40" rows="4" type="text" name="content" id="inpcontent1" placeholder="Content 1"></textarea>
+          <span style="display: grid;">
+            <input type="color" id="color_content1">
+          </span>
+        </span><br>
+        <!-- <label for="content">Content 2 : </label> -->
+        <span style="display: flex;">
+          <textarea cols="40" rows="4" type="text" name="content" id="inpcontent2" placeholder="Content 2"></textarea>
+          <input type="color" id="color_content2">
+        </span><br>
+        <!-- <label for="content">Content 3 : </label> -->
+        <span style="display: flex;">
+          <textarea cols="40" rows="4" type="text" name="content" id="inpcontent3" placeholder="Content 3"></textarea>
+          <input type="color" id="color_content3">
+        </span><br>
+        <!-- <label for="content">Content 4 : </label> -->
+        <span style="display: flex;">
+          <textarea cols="40" rows="4" type="text" name="content" id="inpcontent4" placeholder="Content 4"></textarea>
+          <input type="color" id="color_content4">
+        </span><br>
         <label for="content-font-size">Content Font Size : </label>
         <input type="number" name="content-font-size" id="inpcontent-font-size" placeholder="Font Size" value="50"><br>
         <label for="credit_image">Credit Image : </label>
@@ -80,6 +101,7 @@
         <label for="date">Date :</label>
         <input type="date" name="date" id="inpdate" placeholder="date"><input type="color" id="color_date"><br> 
       </form>
+      <br><br>
       <div class="template_1 template-image" id="template1">
           <div class="top-logo">
               <span id="breaking-tn">
@@ -152,6 +174,7 @@
           placeholder="Font Size"
           value="30" /><br />
       </form>
+      <br><br>
       <div class="template_2 template-image" id="template2">
         <div class="take-action" id="take_action-t-2"><img src="./img/take-action.png" style="margin-top: 300px;" alt=""></div>
         <div id="calender">
@@ -245,6 +268,7 @@
           placeholder="Font Size"
           value="30" /><br />
       </form>
+      <br><br>
 
       <div class="template_3 template-image" id="template3">
         <div id="top-head">
@@ -360,6 +384,7 @@
           placeholder="Font Size"
           value="30" /><br />
       </form>
+      <br><br>
       <div class="template_4 template-image" id="template4">
         <div class="take-action" id="take_action-t-4"><img src="./img/take-action.png" style="margin-top: 200px;margin-left: -280px;" alt=""></div>
         <div class="t-4-main_img">
@@ -483,6 +508,7 @@
           id="t-5-inpdate"
           placeholder="date" /><input type="color" id="t-5-color_date" /><br />
       </form>
+      <br><br>
       <div class="template_5 template-image" id="template5">
         <div class="take-action" id="take_action-t-5"><img src="./img/take-action.png" style="margin-top: 150px;" alt=""></div>
         <div class="t-5-top">
@@ -601,6 +627,7 @@
           accept="image/*"
           onchange="input_image(this,'t-6-credit_image');" /><br />
       </form>
+      <br><br>
       <div class="template_6 apply-font template-image" id="template6">
         <div class="take-action" id="take_action-t-6"><img src="./img/take-action.png" style="margin-top: -250px;" alt=""></div>
         <img id="top_logo" src="./img/Arunai Logo TOP.png" alt="">
