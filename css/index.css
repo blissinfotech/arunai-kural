@@ -60,8 +60,7 @@ body {
   width: 70px;
 }
 .reset {
-  position: fixed;
-  position: fixed;
+  position: absolute;
   right: 0.5%;
   top: 1%;
   padding: 3px 10px;
@@ -1065,6 +1064,9 @@ input:checked + .slider:before {
   }
 }
 
+textarea{
+  background-color: transparent;
+}
 
 input{
   background-color: transparent;
