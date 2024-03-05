@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Template Website</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Noto+Sans+Tamil:wdth,wght@62.5..100,900&family=Tiro+Tamil&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index.css"/>
   </head>
   <body onload="page_onload()">
     <section class="main-dashboard">
-      <img src="./img/logo2.svg" alt="" />
+      <img src="./img/logo2.svg" alt=""/>
 
       <div>
         <label for="fontSelector">Choose Font :</label>
@@ -28,7 +28,7 @@
           <option value="kadhir">Kadhir</option>
           <option value="arugam">Arugam</option>
           <option value="bharani" selected>Bharani</option></select
-        ><br />
+        ><br/>
         <label for="template" id="template-selector">Select Template : </label>
         <select name="template" onclick="set_template(this.value)">
           <option selected disabled hidden>Choose a template</option>
@@ -47,7 +47,7 @@
       <button id="extract-btn" onclick="extract()">Extract</button>
       <button id="close_preview" onclick="close_preview()">X</button>
       <div class="preview-img">
-        <img id="preview" src="" alt="Image Preview" />
+        <img id="preview" src="" alt="Image Preview"/>
       </div>
     </div>
     <button class="reset" onclick="clear_page()">RESET</button>
@@ -141,64 +141,37 @@
           <span class="slider round"></span>
         </label><br><br>
         <label for="date">Date :</label>
-        <input type="date" name="date" id="inpdate2" placeholder="Date" /><br />
+        <input type="date" name="date" id="inpdate2" placeholder="Date"/><br/>
         <label for="main-image">Main Image :</label>
-        <input
-          type="file"
-          name="main-image"
-          id="inpmain-image"
-          onchange="input_image(this,'main_image2')"
-          placeholder="Upload Main Image" /><br />
-          <label for="indru">Indru :</label>
-          <input
-            type="text"
-            name="indru"
-            id="inpindru"
-            placeholder="Today" />
-          <input
-            type="number"
-            name="t-2-indru-font-size"
-            id="t-2-inpindru-font-size"
-            placeholder="Font Size"
-            value="30" /><br />
-        <label for="content">Content :</label>
-        <input
-          type="text"
-          name="content"
-          id="inpcontent"
-          placeholder="Content" />
-        <input
-          type="number"
-          name="t-2-content-font-size"
-          id="t-2-inpcontent-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
+        <input type="file" name="main-image" id="inpmain-image" onchange="input_image(this,'main_image2')" placeholder="Upload Main Image"/><br/>
+        <input type="text" name="indru" id="inpindru" placeholder="Today"/>
+        <input type="number" name="t-2-indru-font-size" id="t-2-inpindru-font-size" placeholder="Font Size" value="30"/><br/>
+        <textarea cols="40" rows="4" type="text" name="content" id="inpcontent" placeholder="Content"></textarea>
+        <input type="number" name="t-2-content-font-size" id="t-2-inpcontent-font-size" placeholder="Size" value="30"/><br/>
       </form>
-      <br><br>
       <div class="template_2 template-image" id="template2">
         <div class="take-action" id="take_action-t-2"><img src="./img/take-action.png" style="margin-top: 300px;" alt=""></div>
         <div id="calender">
-          <img src="./img/calender.png" alt="" />
+          <img src="./img/calender.png" alt=""/>
           <span id="date2">31/12</span>
         </div>
-        <img id="logo" src="./img/Arunai_white.png" alt="" />
-        <!-- <img id="today" src="./img/today.png" alt="" /> -->
+        <img id="logo" src="./img/Arunai_white.png" alt=""/>
+        <!-- <img id="today" src="./img/today.png" alt=""/> -->
         <h1 id="indru">இன்று</h1>
         <div id="main">
           <div id="main_img">
             <p id="water-mark" style="top: -20px">Arunai Kural</p>
-            <img
-              id="main_image2"
+            <img id="main_image2"
               class="main-image"
               src="./img/main.png"
-              alt="" />
+              alt=""/>
           </div>
           <div class="content t-2-content apply-font">
             <p id="content">பிடல் காஸ்ட்ரோ நினைவு நாள்</p>
           </div>
         </div>
-        <img id="social_media" src="./img/sm.svg" alt="" />
-        <img id="bottom-logo" src="./img/Arunai Logo TOP.png" alt="" />
+        <img id="social_media" src="./img/sm.svg" alt=""/>
+        <img id="bottom-logo" src="./img/Arunai Logo TOP.png" alt=""/>
       </div>
     </section>
 
@@ -206,67 +179,21 @@
       <form>
         <h2>Content Form</h2>
         <label for="date">Date & Time :</label>
-        <input
-          type="datetime-local"
-          name="date"
-          id="timedate"
-          placeholder="Date"
-          required /><br />
+        <input type="datetime-local" name="date" id="timedate" placeholder="Date" required/><br/>
         <label for="main-image">News 1 Image :</label>
-        <input
-          type="file"
-          name="main-image"
-          onchange="input_image(this,'news_image1')"
-          placeholder="Upload Main Image" /><br />
-        <label for="content">News 1 Content:</label>
-        <input
-          type="text"
-          name="content"
-          id="inpnews1"
-          placeholder="Content" /><br />
+        <input type="file" name="main-image" onchange="input_image(this,'news_image1')" placeholder="Upload Main Image"/><br/>
+        <textarea cols="40" rows="4" type="text" name="content" id="inpnews1" placeholder="Content 1"></textarea><br/>
         <label for="main-image">News 2 Image :</label>
-        <input
-          type="file"
-          name="main-image"
-          onchange="input_image(this,'news_image2')"
-          placeholder="Upload Main Image" /><br />
-        <label for="content">News 2 Content:</label>
-        <input
-          type="text"
-          name="content"
-          id="inpnews2"
-          placeholder="Content" /><br />
+        <input type="file" name="main-image" onchange="input_image(this,'news_image2')" placeholder="Upload Main Image"/><br/>
+        <textarea cols="40" rows="4" type="text" name="content" id="inpnews2" placeholder="Content 2"></textarea><br/>
         <label for="main-image">News 3 Image :</label>
-        <input
-          type="file"
-          name="main-image"
-          onchange="input_image(this,'news_image3')"
-          placeholder="Upload Main Image" /><br />
-        <label for="content">News 3 Content:</label>
-        <input
-          type="text"
-          name="content"
-          id="inpnews3"
-          placeholder="Content" /><br />
+        <input type="file" name="main-image" onchange="input_image(this,'news_image3')" placeholder="Upload Main Image"/><br/>
+        <textarea cols="40" rows="4" type="text" name="content" id="inpnews3" placeholder="Content 3"></textarea><br/>
         <label for="main-image">News 4 Image :</label>
-        <input
-          type="file"
-          name="main-image"
-          onchange="input_image(this,'news_image4')"
-          placeholder="Upload Main Image" /><br />
-        <label for="content">News 4 Content:</label>
-        <input
-          type="text"
-          name="content"
-          id="inpnews4"
-          placeholder="Content" /><br />
+        <input type="file" name="main-image" onchange="input_image(this,'news_image4')" placeholder="Upload Main Image"/><br/>
+        <textarea cols="40" rows="4" type="text" name="content" id="inpnews4" placeholder="Content 4"></textarea><br/>
         <label for="t-3-content-font-size">Content Font Size : </label>
-        <input
-          type="number"
-          name="t-3-content-font-size"
-          id="t-3-inpcontent-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
+        <input type="number" name="t-3-content-font-size" id="t-3-inpcontent-font-size" placeholder="Font Size" value="30"/><br/>
       </form>
       <br><br>
 
@@ -284,54 +211,53 @@
             </div>
           </div>
           <div id="top-2">
-            <img src="./img/Arunai Logo TOP.png" alt="" />
+            <img src="./img/Arunai Logo TOP.png" alt=""/>
             <h2>தலைப்பு செய்திகள்</h2>
           </div>
         </div>
         <div id="body-content" class="apply-font">
           <div id="content" class="apply-font">
             <div id="content-image" class="news_image1">
-              <img
-                id="news_image1"
+              <img id="news_image1"
                 class="main-image"
                 src="./img/main.png"
-                alt="" />
+                alt=""/>
             </div>
             <p id="cont1">
               எல்லாம் ஒரு மார்க்கமா இருக்கே.. மாஸ்டர் ஹீரோயின் மாளவிகா மோகனனின்
               படு கவர்ச்சியான புகைப்படங்கள்! கண்ணாடி முன்பே கட்டுடலை காட்டி...
             </p>
-            <img id="content-logo" src="./img/Arunai_white.png" alt="" />
+            <img id="content-logo" src="./img/Arunai_white.png" alt=""/>
           </div>
           <div id="content" class="apply-font">
             <div id="content-image" class="news_image2">
-              <img id="news_image2" src="./img/template1.jpg" alt="" />
+              <img id="news_image2" src="./img/template1.jpg" alt=""/>
             </div>
             <p id="cont2">
               எல்லாம் ஒரு மார்க்கமா இருக்கே.. மாஸ்டர் ஹீரோயின் மாளவிகா மோகனனின்
               படு கவர்ச்சியான புகைப்படங்கள்!
             </p>
-            <img id="content-logo" src="./img/Arunai_white.png" alt="" />
+            <img id="content-logo" src="./img/Arunai_white.png" alt=""/>
           </div>
           <div id="content" class="apply-font">
             <div id="content-image" class="news_image3">
-              <img id="news_image3" src="./img/template2.jpg" alt="" />
+              <img id="news_image3" src="./img/template2.jpg" alt=""/>
             </div>
             <p id="cont3">
               எல்லாம் ஒரு மார்க்கமா இருக்கே.. மாஸ்டர் ஹீரோயின் மாளவிகா மோகனனின்
               படு கவர்ச்சியான புகைப்படங்கள்! கண்ணாடி முன்பே கட்டுடலை காட்டி
             </p>
-            <img id="content-logo" src="./img/Arunai_white.png" alt="" />
+            <img id="content-logo" src="./img/Arunai_white.png" alt=""/>
           </div>
           <div id="content" class="apply-font">
             <div id="content-image" class="news_image4">
-              <img id="news_image4" src="./img/template3.jpg" alt="" />
+              <img id="news_image4" src="./img/template3.jpg" alt=""/>
             </div>
             <p id="cont4">
               எல்லாம் ஒரு மார்க்கமா இருக்கே.. மாஸ்டர் ஹீரோயின் மாளவிகா மோகனனின்
               படு கவர்ச்சியான புகைப்படங்கள்! கண்ணாடி முன்பே கட்டுடலை காட்டி
             </p>
-            <img id="content-logo" src="./img/Arunai_white.png" alt="" />
+            <img id="content-logo" src="./img/Arunai_white.png" alt=""/>
           </div>
         </div>
       </div>
@@ -347,42 +273,12 @@
         </label><br><br>
 
         <label for="main-image">Image : </label>
-        <input
-          type="file"
-          name="main-image"
-          onchange="t_4_main_image(this)"
-          placeholder="Upload Main Image" /><br />
-        <label for="content">Content 1 : </label>
-        <input
-          type="text"
-          name="content"
-          id="t-4-inpcontent1"
-          placeholder="Content 1" /><input
-          type="color"
-          id="t-4-color_content1" /><br />
-        <label for="content">Content 2 : </label>
-        <input
-          type="text"
-          name="content"
-          id="t-4-inpcontent2"
-          placeholder="Content 2" /><input
-          type="color"
-          id="t-4-color_content2" /><br />
-        <label for="content">Content 3 : </label>
-        <input
-          type="text"
-          name="content"
-          id="t-4-inpcontent3"
-          placeholder="Content 3" /><input
-          type="color"
-          id="t-4-color_content3" /><br />
+        <input type="file" name="main-image" onchange="t_4_main_image(this)" placeholder="Upload Main Image"/><br/>
+        <textarea cols="40" rows="4" name="content" id="t-4-inpcontent1" placeholder="Content 1"></textarea><input type="color" id="t-4-color_content1"/><br/>
+        <textarea cols="40" rows="4" name="content" id="t-4-inpcontent2" placeholder="Content 2"></textarea><input type="color" id="t-4-color_content2"/><br/>
+        <textarea cols="40" rows="4" name="content" id="t-4-inpcontent3" placeholder="Content 3"></textarea><input type="color" id="t-4-color_content3"/><br/>
         <label for="t-4-content-font-size">Content Font Size : </label>
-        <input
-          type="number"
-          name="t-4-content-font-size"
-          id="t-4-inpcontent-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
+        <input type="number" name="t-4-content-font-size" id="t-4-inpcontent-font-size" placeholder="Font Size" value="30"/><br/>
       </form>
       <br><br>
       <div class="template_4 template-image" id="template4">
@@ -393,7 +289,7 @@
           </p>
           <!-- <img id="template_4-image" src="./img/Image.jpg" alt=""> -->
         </div>
-        <img id="template_4-logo" src="./img/Arunai Logo TOP.png" alt="" />
+        <img id="template_4-logo" src="./img/Arunai Logo TOP.png" alt=""/>
         <p>
           <span
             style="
@@ -435,85 +331,33 @@
           <span class="slider round"></span>
         </label><br><br>
         <label for="t-5-content_image">Content Image : </label>
-        <input
-          type="file"
-          name="t-5-content_image"
-          id="t-5-content_image"
-          accept="image/*"
-          onchange="input_image(this,'t-5-main_image');" /><br />
-        <label for="t-5-headline">Headline : </label>
-        <input
-          type="text"
-          name="t-5-headline"
-          id="t-5-inpheadline"
-          placeholder="Headline" />
-          <input
-          type="color"
-          id="t-5-color_headline" />
-        <input
-          type="number"
-          name="t-5-headline-font-size"
-          id="t-5-inpheadline-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
-        <label for="t-5-content">Content 1 : </label>
-        <input
-          type="text"
-          name="t-5-content"
-          id="t-5-inpcontent1"
-          placeholder="Content 1" /><input
-          type="color"
-          id="t-5-color_content1" /><br />
-        <label for="t-5-content">Content 2 : </label>
-        <input
-          type="text"
-          name="t-5-content"
-          id="t-5-inpcontent2"
-          placeholder="Content 2" /><input
-          type="color"
-          id="t-5-color_content2" /><br />
-        <label for="t-5-content">Content 3 : </label>
-        <input
-          type="text"
-          name="t-5-content"
-          id="t-5-inpcontent3"
-          placeholder="Content 3" /><input
-          type="color"
-          id="t-5-color_content3" /><br />
-        <label for="t-5-content">Content 4 : </label>
-        <input
-          type="text"
-          name="t-5-content"
-          id="t-5-inpcontent4"
-          placeholder="Content 4" /><input
-          type="color"
-          id="t-5-color_content4" /><br />
+        <input type="file" name="t-5-content_image" id="t-5-content_image" accept="image/*" onchange="input_image(this,'t-5-main_image');"/><br/>
+        <span style="display: flex;">
+          <textarea type="text" cols="40" rows="4" name="t-5-headline" id="t-5-inpheadline" placeholder="Headline"></textarea>
+          <span style="display: grid;">
+            <input type="number" name="t-5-headline-font-size" id="t-5-inpheadline-font-size" placeholder="Font Size" value="30"/>
+            <input type="color" id="t-5-color_headline"/>
+          </span>
+        </span><br/>
+        <textarea cols="40" rows="4" name="t-5-content" id="t-5-inpcontent1" placeholder="Content 1"></textarea><input type="color" id="t-5-color_content1"/><br/>
+        <textarea cols="40" rows="5" name="t-5-content" id="t-5-inpcontent2" placeholder="Content 2"></textarea><input type="color" id="t-5-color_content2"/><br/>
+        <textarea cols="40" rows="5" name="t-5-content" id="t-5-inpcontent3" placeholder="Content 3"></textarea><input type="color" id="t-5-color_content3"/><br/>
+        <textarea cols="40" rows="5" name="t-5-content" id="t-5-inpcontent4" placeholder="Content 4"></textarea><input type="color" id="t-5-color_content4"/><br/>
         <label for="t-5-content-font-size">Content Font Size : </label>
-        <input
-          type="number"
-          name="t-5-content-font-size"
-          id="t-5-inpcontent-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
+        <input type="number" name="t-5-content-font-size" id="t-5-inpcontent-font-size" placeholder="Font Size" value="30"/><br/>
         <label for="t-5-credit_image">Credit Image : </label>
-        <input
-          type="file"
-          name="t-5-credit_image"
+        <input type="file" name="t-5-credit_image"
           accept="image/*"
-          onchange="input_image(this,'t-5-credit_image');" /><br />
+          onchange="input_image(this,'t-5-credit_image');"/><br/>
         <label for="date">Date :</label>
-        <input
-          type="date"
-          name="date"
-          id="t-5-inpdate"
-          placeholder="date" /><input type="color" id="t-5-color_date" /><br />
+        <input type="date" name="date" id="t-5-inpdate" placeholder="date"/><input type="color" id="t-5-color_date"/><br/>
       </form>
       <br><br>
       <div class="template_5 template-image" id="template5">
         <div class="take-action" id="take_action-t-5"><img src="./img/take-action.png" style="margin-top: 150px;" alt=""></div>
         <div class="t-5-top">
           <div class="t-5-left">
-            <img src="./img/Arunai Logo TOP.png" alt="" />
+            <img src="./img/Arunai Logo TOP.png" alt=""/>
           </div>
           <div class="t-5-right">
             <span id="t-5-date">01-01-2024</span>
@@ -521,11 +365,10 @@
         </div>
         <p id="water-mark">Arunai Kural</p>
         <div class="t-5-main_image">
-          <img
-            id="t-5-main_image"
+          <img id="t-5-main_image"
             class="main-image"
             src="./img/main.png"
-            alt="" />
+            alt=""/>
         </div>
         <div id="t-5-heading" class="apply-font">
           <p id="t-5-heading">மாநகராட்சி அதிகாரிகள் கவனத்திற்கு !</p>
@@ -539,10 +382,10 @@
           </p>
         </div>
         <div class="t-5-social-media">
-          <img id="t-5-social-media" src="./img/social-media.svg" alt="" />
+          <img id="t-5-social-media" src="./img/social-media.svg" alt=""/>
         </div>
         <div class="t-5-credit">
-          <img id="t-5-credit_image" src="./img/credit-temp.svg" alt="" />
+          <img id="t-5-credit_image" src="./img/credit-temp.svg" alt=""/>
         </div>
       </div>
     </section>
@@ -555,77 +398,26 @@
           <span class="slider round"></span>
         </label><br><br>
         <label for="t-6-content_image">Content Image : </label>
-        <input
-          type="file"
-          name="t-6-content_image"
-          id="t-6-content_image"
-          accept="image/*"
-          onchange="input_image(this,'t-6-main_image');" /><br />
-        <label for="t-6-headline">Headline : </label>
-        <input
-          type="text"
-          name="t-6-headline"
-          id="t-6-inpheadline"
-          placeholder="Headline" value="மாநகராட்சி அதிகாரிகள் கவனத்திற்கு !"/><input
-          type="color"
-          id="t-6-color_headline" />
-        <input
-          type="number"
-          name="t-6-headline-font-size"
-          id="t-6-inpheadline-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
-        <label for="t-6-content">Content 1 : </label>
-        <input
-          type="text"
-          name="t-6-content"
-          id="t-6-inpcontent1"
-          placeholder="Content 1" /><input
-          type="color"
-          id="t-6-color_content1" /><br />
-        <label for="t-6-content">Content 2 : </label>
-        <input
-          type="text"
-          name="t-6-content"
-          id="t-6-inpcontent2"
-          placeholder="Content 2" /><input
-          type="color"
-          id="t-6-color_content2" /><br />
-        <label for="t-6-content">Content 3 : </label>
-        <input
-          type="text"
-          name="t-6-content"
-          id="t-6-inpcontent3"
-          placeholder="Content 3" /><input
-          type="color"
-          id="t-6-color_content3" /><br />
-        <label for="t-6-content">Content 4 : </label>
-        <input
-          type="text"
-          name="t-6-content"
-          id="t-6-inpcontent4"
-          placeholder="Content 4" /><input
-          type="color"
-          id="t-6-color_content4" /><br />
+        <input type="file" name="t-6-content_image" id="t-6-content_image" accept="image/*" onchange="input_image(this,'t-6-main_image');"/><br/>
+        <span style="display: flex;">
+          <textarea cols="40" rows="4" name="t-6-headline" id="t-6-inpheadline" placeholder="Headline" value="மாநகராட்சி அதிகாரிகள் கவனத்திற்கு !"></textarea>
+          <span style="display: grid;">
+            <input type="color" id="t color_headline"/>
+            <input type="number" name="t-6-headline-font-size" id="t-6-inpheadline-font-size" placeholder="Font Size" value="30"/><br/>
+          </span>
+        </span><br>
+        <textarea cols="40" rows="4" name="t-6-content" id="t-6-inpcontent1" placeholder="Content 1"></textarea><input type="color" id="t-6-color_content1"/><br/>
+        <textarea cols="40" rows="4" name="t-6-content" id="t-6-inpcontent2" placeholder="Content 2"></textarea><input type="color" id="t-6-color_content2"/><br/>
+        <textarea cols="40" rows="4" name="t-6-content" id="t-6-inpcontent3" placeholder="Content 3"></textarea><input type="color" id="t-6-color_content3"/><br/>
+        <textarea cols="40" rows="4" name="t-6-content" id="t-6-inpcontent4" placeholder="Content 4"></textarea><input type="color" id="t-6-color_content4"/><br/>
         <label for="t-6-content-font-size">Content Font Size : </label>
-        <input
-          type="number"
-          name="t-6-content-font-size"
-          id="t-6-inpcontent-font-size"
-          placeholder="Font Size"
-          value="30" /><br />
+        <input type="number" name="t-6-content-font-size" id="t-6-inpcontent-font-size" placeholder="Font Size" value="30"/><br/>
           <label for="date">Date :</label>
-          <input
-            type="date"
-            name="date"
-            id="t-6-inpdate"
-            placeholder="date"/><br>
+          <input type="date" name="date" id="t-6-inpdate" placeholder="date"/><br>
         <label for="t-6-credit_image">Credit Image : </label>
-        <input
-          type="file"
-          name="t-6-credit_image"
+        <input type="file" name="t-6-credit_image"
           accept="image/*"
-          onchange="input_image(this,'t-6-credit_image');" /><br />
+          onchange="input_image(this,'t-6-credit_image');"/><br/>
       </form>
       <br><br>
       <div class="template_6 apply-font template-image" id="template6">
@@ -649,10 +441,10 @@
         </div>
         <img id="bg_image" src="./img/bg_image.png" alt="Template 6">
         <div class="t-6-main_image">
-          <img id="t-6-main_image" class="main-image" src="./img/main.png" alt="" />
+          <img id="t-6-main_image" class="main-image" src="./img/main.png" alt=""/>
         </div>
         <div class="t-6-credit">
-          <img id="t-6-credit_image" src="./img/credit-temp.svg" alt="" />
+          <img id="t-6-credit_image" src="./img/credit-temp.svg" alt=""/>
         </div>
         <h1 id="t-6-just-now" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">JUST NOW</h1>
       </div>
