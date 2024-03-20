@@ -230,13 +230,13 @@ function template6content() {
   var contentdata4 = frmid('t-6-inpcontent4').value;
   var inpdate = frmid('t-6-inpdate').value;
   var inpheadlinefontsize = frmid('t-6-inpheadline-font-size').value + "px";
-  var inpcontentfontsize = frmid('t-6-inpcontent-font-size').value + "px";
-
+  
   var headline = frmid('t-6-heading');
   var content1 = frmid('t-6-content1');
   var content2 = frmid('t-6-content2');
   var content3 = frmid('t-6-content3');
   var content4 = frmid('t-6-content4');
+  var inpcontentfontsize = frmid('t-6-inpcontent-font-size').value + "px";
   
   var year = frmid('t-6-year');
   var month = frmid('t-6-month');
@@ -337,14 +337,10 @@ function t_6_main_image(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
     reader.onload = function (e) {
-      $('.main-image-t-6').css('background-image', "url(" + e.target.result + ")");
+      $('.t-6-main_img').css('background-image', "url(" + e.target.result + ")");
     };
     reader.readAsDataURL(input.files[0]);
   }
-}
-
-function bg_img(id) {
-
 }
 
 
