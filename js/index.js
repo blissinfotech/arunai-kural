@@ -63,6 +63,8 @@ function template1content() {
   var inpheadlinefontsize = frmid('inpheadline-font-size').value + "px";
   var inpcontentfontsize = frmid('inpcontent-font-size').value + "px";
 
+  datedata = datedata.toString().split("-")[2] + "-" + datedata.split("-")[1]+ "-" + datedata.split("-")[0];
+
   var tn_1 = frmid('tn-1');
   var tn_2 = frmid('tn-2');
   var place = frmid('place');
@@ -138,10 +140,15 @@ function template3content() {
   var inpnews3 = frmid('inpnews3').value;
   var inpnews4 = frmid('inpnews4').value;
   var fontsize = frmid('t-3-inpcontent-font-size').value + "px";
+  var t_3headfontsize = frmid('t-3-headline-font-size').value + "px";
+
+
   frmid('cont1').innerHTML = inpnews1;
   frmid('cont2').innerHTML = inpnews2;
   frmid('cont3').innerHTML = inpnews3;
   frmid('cont4').innerHTML = inpnews4;
+  
+  $('#t-3-headline').css("fontSize", t_3headfontsize);
   $("#cont1").css("fontSize", fontsize);
   $("#cont2").css("fontSize", fontsize);
   $("#cont3").css("fontSize", fontsize);
@@ -185,6 +192,8 @@ function template5content() {
   var inpdate = frmid('t-5-inpdate').value;
   var inpheadlinefontsize = frmid('t-5-inpheadline-font-size').value + "px";
   var inpcontentfontsize = frmid('t-5-inpcontent-font-size').value + "px";
+
+  inpdate = inpdate.toString().split("-")[2] + "-" + inpdate.split("-")[1]+ "-" + inpdate.split("-")[0];
 
   var headline = frmid('t-5-heading');
   var content1 = frmid('t-5-content1');

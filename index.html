@@ -100,15 +100,34 @@
         <input type="file" name="credit_image" accept="image/*" onchange="input_image(this,'credit_image');"><br>
         <label for="date">Date :</label>
         <input type="date" name="date" id="inpdate" placeholder="date"><input type="color" id="color_date"><br> 
+        <script>
+          function mydate()
+            {
+              //alert("");
+            document.getElementById("dt").hidden=false;
+            document.getElementById("ndt").hidden=true;
+            }
+            function mydate1()
+            {
+            d=new Date(document.getElementById("dt").value);
+            dt=d.getDate();
+            mn=d.getMonth();
+            mn++;
+            yy=d.getFullYear();
+            document.getElementById("ndt").value=dt+"/"+mn+"/"+yy
+            document.getElementById("ndt").hidden=false;
+            document.getElementById("dt").hidden=true;
+            }
+        </script>
       </form>
       <br><br>
       <div class="template_1 template-image" id="template1">
           <div class="top-logo">
-              <span id="breaking-tn">
+              <span id="breaking-tn" class="apply-font">
                 <p id="tn-1">BREAKING</p>
                 <p id="tn-2">தமிழ்நாடு</p>
               </span>
-              <img id="main_logo" src="./img/logo.png" alt="">
+              <img id="main_logo" src="./img/Arunai Logo TOP.png" alt="">
           </div>
           <div class="main_image main_image">
             <P id="water-mark">Arunai Kural</P>
@@ -157,7 +176,7 @@
         </div>
         <img id="logo" src="./img/Arunai_white.png" alt=""/>
         <!-- <img id="today" src="./img/today.png" alt=""/> -->
-        <h1 id="indru">இன்று</h1>
+        <h1 id="indru" class="apply-font">இன்று</h1>
         <div id="main">
           <div id="main_img">
             <p id="water-mark" style="top: -20px">Arunai Kural</p>
@@ -178,6 +197,8 @@
     <section class="template-section-3 template">
       <form>
         <h2>Content Form</h2>
+        <label for="t-3-headline-font-size">Heading Font Size : </label>
+        <input type="number" name="t-3-headline-font-size" id="t-3-headline-font-size" placeholder="Font Size" value="30"/><br/>
         <label for="date">Date & Time :</label>
         <input type="datetime-local" name="date" id="timedate" placeholder="Date" required/><br/>
         <label for="main-image">News 1 Image :</label>
@@ -212,7 +233,7 @@
           </div>
           <div id="top-2">
             <img src="./img/Arunai Logo TOP.png" alt=""/>
-            <h2>தலைப்பு செய்திகள்</h2>
+            <h2 class="apply-font" id="t-3-headline">தலைப்பு செய்திகள்</h2>
           </div>
         </div>
         <div id="body-content" class="apply-font">
@@ -373,7 +394,7 @@
         <div id="t-5-heading" class="apply-font">
           <p id="t-5-heading">மாநகராட்சி அதிகாரிகள் கவனத்திற்கு !</p>
         </div>
-        <div class="t-5-content apply-font">
+        <div class="t-5-content apply-font" style="text-align: center;">
           <p>
             <span id="t-5-content1">எல்லையில் நுழைந்த மியான்மர் ராணுவம்...</span>
             <span id="t-5-content2"> இந்திய இராணுவம்</span>
@@ -444,7 +465,7 @@
           <img id="t-6-main_image" class="main-image" src="./img/main.png" alt=""/>
         </div>
         <div class="t-6-credit">
-          <img id="t-6-credit_image" src="./img/credit-temp.svg" alt=""/>
+          <img id="t-6-credit_image" src="./img/sm.svg" alt=""/>
         </div>
         <h1 id="t-6-just-now" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">JUST NOW</h1>
       </div>

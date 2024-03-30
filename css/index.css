@@ -199,11 +199,9 @@ body {
 }
 .template_1 .top-logo #main_logo{
   position: absolute;
-  width: 170px;
+  width: 200px;
   height: fit-content;
-  background-color: white;
-  padding: 5px 10px;
-  margin: -5px 0 0 490px;
+  margin: -15px 0 0 480px;
   border-radius: 5px;
 }
 .template_1 .main_image{
@@ -259,7 +257,7 @@ body {
   font-size: 35px;
 }
 .head p #headline{
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .template_1 .content{
   z-index: 0;
@@ -392,12 +390,11 @@ body {
 .template_2 .content #content {
   position: absolute;
   text-align: center;
-  width: 400px;
+  width: 500px;
   line-height: 50px;
   border-radius: 10px;
   font-size: 25px;
-  padding: 30px 50px;
-  margin: 40px 40px 0 40px;
+  margin: 80px 0 0 0;
 }
 .template_2 #social_media {
   position: absolute;
@@ -444,13 +441,10 @@ body {
   display: block;
   height: 100px;
   width: 520px;
-
   font-size: 90px;
   font-weight: 500;
-  
   margin-top: -30px;
   padding: 15px;
-  
   border-right: 3px solid white;
   border-bottom: 3px solid white;
 }
