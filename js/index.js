@@ -160,26 +160,33 @@ function template4content() {
   var contentdata1 = frmid('t-4-inpcontent1').value;
   var contentdata2 = frmid('t-4-inpcontent2').value;
   var contentdata3 = frmid('t-4-inpcontent3').value;
+  var t_4_inpdate = frmid('t-4-inpdate').value;
+
+  t_4_inpdate = t_4_inpdate.toString().split("-")[2] + "-" + t_4_inpdate.split("-")[1]+ "-" + t_4_inpdate.split("-")[0];
 
   var inpcontentfontsize = frmid('t-4-inpcontent-font-size').value + "px";
 
   var content1 = frmid('t-4-content1');
   var content2 = frmid('t-4-content2');
   var content3 = frmid('t-4-content3');
+  
+  var t_4_date = frmid('t-4-date');
 
   var color_content1 = frmid('t-4-color_content1').value;
   var color_content2 = frmid('t-4-color_content2').value;
   var color_content3 = frmid('t-4-color_content3').value;
-
+  
   content1.innerHTML = contentdata1;
   content1.style.color = color_content1;
-
+  
   content2.innerHTML = contentdata2;
   content2.style.color = color_content2;
-
+  
   content3.innerHTML = contentdata3;
   content3.style.color = color_content3;
-
+  
+  t_4_date.innerHTML = t_4_inpdate;
+  
   $('#template4-content').css({ 'font-size': inpcontentfontsize });
 }
 
