@@ -1,7 +1,8 @@
+var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
 document.getElementById('fontSelector').addEventListener('change', function () {
   $('.apply-font').css('fontFamily', this.value);
 });
-
 function page_onload() {
   $('.apply-font').css('fontFamily', 'bharani');
   window.localStorage.setItem("template_id", 'template1');
@@ -62,8 +63,8 @@ function template1content() {
   var datedata = frmid('inpdate').value;
   var inpheadlinefontsize = frmid('inpheadline-font-size').value + "px";
   var inpcontentfontsize = frmid('inpcontent-font-size').value + "px";
-
-  datedata = datedata.toString().split("-")[2] + "-" + datedata.split("-")[1]+ "-" + datedata.split("-")[0];
+  
+  datedata = datedata.toString().split("-")[2] + " " + month[parseInt(datedata.split("-")[1])] + " " + datedata.split("-")[0];
 
   var tn_1 = frmid('tn-1');
   var tn_2 = frmid('tn-2');
@@ -162,7 +163,7 @@ function template4content() {
   var contentdata3 = frmid('t-4-inpcontent3').value;
   var t_4_inpdate = frmid('t-4-inpdate').value;
 
-  t_4_inpdate = t_4_inpdate.toString().split("-")[2] + "-" + t_4_inpdate.split("-")[1]+ "-" + t_4_inpdate.split("-")[0];
+  t_4_inpdate = t_4_inpdate.toString().split("-")[2] + " " + month[parseInt(t_4_inpdate.split("-")[1])] + " " + t_4_inpdate.split("-")[0];
 
   var inpcontentfontsize = frmid('t-4-inpcontent-font-size').value + "px";
 
@@ -200,7 +201,7 @@ function template5content() {
   var inpheadlinefontsize = frmid('t-5-inpheadline-font-size').value + "px";
   var inpcontentfontsize = frmid('t-5-inpcontent-font-size').value + "px";
 
-  inpdate = inpdate.toString().split("-")[2] + "-" + inpdate.split("-")[1]+ "-" + inpdate.split("-")[0];
+  inpdate = inpdate.toString().split("-")[2] + " " + month[parseInt(inpdate.split("-")[1])] + " " + inpdate.split("-")[0];
 
   var headline = frmid('t-5-heading');
   var content1 = frmid('t-5-content1');
@@ -238,7 +239,7 @@ function template5content() {
 
 }
 
-function template6content() {
+function template6content() { 
   var t_6_heading = frmid('t-6-inpheadline').value;
   var contentdata1 = frmid('t-6-inpcontent1').value;
   var contentdata2 = frmid('t-6-inpcontent2').value;
