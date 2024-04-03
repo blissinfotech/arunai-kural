@@ -54,7 +54,7 @@ function frmid(id) {
 function template1content() {
   var tlbrkdata = frmid('inptlbrk').value;
   var tlplacedata = frmid('inptlplace').value;
-  var placedata = frmid('inpplace').value;
+  // var placedata = frmid('inpplace').value;
   var headlinedata = frmid('inpheadline').value;
   var contentdata1 = frmid('inpcontent1').value;
   var contentdata2 = frmid('inpcontent2').value;
@@ -68,7 +68,7 @@ function template1content() {
 
   var tn_1 = frmid('tn-1');
   var tn_2 = frmid('tn-2');
-  var place = frmid('place');
+  // var place = frmid('place');
   var headline = frmid('headline');
   var content1 = frmid('content1');
   var content2 = frmid('content2');
@@ -78,7 +78,7 @@ function template1content() {
 
   var color_tlbrk = frmid('color_tlbrk').value;
   var color_tlplace = frmid('color_tlplace').value;
-  var color_place = frmid('color_place').value;
+  // var color_place = frmid('color_place').value;
   var headline_color = frmid('color_headline').value;
   var color_content1 = frmid('color_content1').value;
   var color_content2 = frmid('color_content2').value;
@@ -92,8 +92,8 @@ function template1content() {
   tn_2.innerHTML = tlplacedata;
   tn_2.style.color = color_tlplace;
 
-  place.innerHTML = placedata;
-  place.style.color = color_place;
+  // place.innerHTML = placedata;
+  // place.style.color = color_place;
 
   headline.innerHTML = headlinedata;
   headline.style.color = headline_color;
