@@ -1,4 +1,4 @@
-var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var month = ["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
 document.getElementById('fontSelector').addEventListener('change', function () {
   $('.apply-font').css('fontFamily', this.value);
