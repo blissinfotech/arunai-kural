@@ -350,7 +350,7 @@ body {
 
 .template_2 #today {
   z-index: 99;
-  width: 360px;
+  width: 360px; 
   margin: 0px 180px 0px 180px;
 }
 .template_2 #indru {
